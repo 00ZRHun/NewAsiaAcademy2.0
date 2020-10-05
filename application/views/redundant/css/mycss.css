@@ -1,0 +1,14 @@
+ .delbtn {
+  /* Blue background */
+  border: none; /* Remove borders */
+  color:#404040; /* White text */
+  background: none;
+  background: transparent;
+  font-size: 25px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.delbtn:hover {
+  color: grey;
+}
