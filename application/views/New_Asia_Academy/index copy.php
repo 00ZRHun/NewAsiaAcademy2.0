@@ -6,13 +6,11 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		
-    <title>New Asia Academy</title>
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>New Asia Academy</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
@@ -41,8 +39,6 @@
     <link type="text/css" rel="stylesheet" href="<?= site_url(); ?>as/import/slick/slick-theme.css"/>
 
     <!-- <link rel="stylesheet" type="text/css" href="css/slick.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
   <style>
     .checked {
       color: orange;
@@ -59,9 +55,6 @@
       padding: 0px;
       overflow-x: hidden; 
     }
-    /* body{
-      background-color: black;
-    } */
 
       .flex-container {
         display: flex;
@@ -89,41 +82,6 @@
         font-size: 18px
       }
     }
-
-    /* slick */
-    .details {
-      margin: 10px 0;
-      background-color: #fff;
-      padding: 30px 20px;
-      position: relative;
-      z-index: 1;
-    }
-
-    #courseImg {
-      height: 125px;
-      width: 150px;
-    }
-    /* button.slick-prev.slick-arrow:before, button.slick-next:before, button.slick-slide-control00::before, button.slick-slide-control01 { */
-    button.slick-prev.slick-arrow:before, button.slick-next:before {
-      color: #d57729;
-      font-size: x-large;
-    }
-    /* button.slick-prev.slick-arrow:before {
-      color: black;
-      font-size: x-large;
-    }
-    button.slick-next:before {
-      color: black;
-      font-size: x-large;
-    }
-    button.slick-slide-control00::before {
-      color: black;
-      font-size: x-large;
-    }
-    button.slick-slide-control01::before {
-      color: black;
-      font-size: x-large;
-    } */
   </style>      
   </head>
   <body>
@@ -165,7 +123,6 @@
 			
 		</header>
 		
-    <!--Timer-->
 		<div id="hot-deal" class="section top">
 			<!-- container -->
 			<div class="container-fluid">
@@ -173,13 +130,17 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="hot-deal">
-							<ul class="hot-deal-countdown">	
+							<ul class="hot-deal-countdown">
+								
+								
+									
 									<strong>
 										<span class="count" id="days" >Days</span>						
 										<span  class="count" id="hours">Hours</span>														
 										<span class="count" id="minutes">Mins</span>											
 										<span class="count" id="seconds">Secs</span>
 									</strong>
+								
 							</ul>
 							<h2 class="text-uppercase">hot deal this week</h2>
 							<p> Up to 50% OFF</p>
@@ -191,191 +152,62 @@
 			</div>
 			<!-- /container -->
     </div>
-    <!--/Timer-->
-  
-    <div class="container">
-      <br>
-      <hr>
+    
 
-      <!-- SECTION 1: PROFESSIONAL COURSES -->			
-      <div style="text-align: center;"><strong style="font-size: 30PX">PROFESSIONAL COURSES</strong></div>
-      
-      <div class="row slider">
-        <?php foreach($professional_course_list as $row_professional_course){ ?>
-          <div class="col-md-12">
-            <div
-              style="padding-bottom: 30px; background: white"
-              class="details text-center"
+
+    
+    
+    <!-- /HOT DEAL SECTION 3 -->			
+    <div style="text-align: center;"><strong style="font-size: 30PX">SHORT COURSE / WORKSHOP </strong></div>
+    
+    <?php foreach($short_course_list as $row_short_course){ ?>
+      <div
+        style="padding-bottom: 30px; background: white"
+        class="piece text-center"
+        >
+        <a href="">
+          <div>
+            <!-- <div class="card" style="width: 15rem;"> -->
+              <!-- src="<?= base_url(); ?>as/import/img/hotdeal.jpg" -->
+            <img
+              src="<?= base_url(); ?>/images/<?php echo $row_short_course->image;?>"
+              id="courseImg"
+              class="card-img-top"
+              alt="..."
+              style="width: 100%; max-height: 170px"
+            />
+            <!-- <div class="card-body"><br> -->
+            <h5 class="card-title">
+              <!-- <?php echo $row_short_course->ID;?> -->
+              <?php echo $row_short_course->title;?>
+            </h5>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+
+            <!-- <p>
+              <span style="font-size: 20px"><strong>RM10</strong></span
+              >&nbsp;<span
+                style="text-decoration: line-through; color: gray"
+                >RM 20</span
               >
-              <!-- class="piece text-center" -->
-              <a href="">
-                <div>
-                  <!-- <div class="card" style="width: 15rem;"> -->
-                    <!-- src="<?= base_url(); ?>as/import/img/hotdeal.jpg" -->
-                  <img
-                    src="<?= base_url(); ?>/images/<?php echo $row_professional_course->image;?>"
-                    id="courseImg"
-                    class="card-img-top"
-                    alt="..."
-                    style="width: 100%; max-height: 170px"
-                  />
-                  <!-- <div class="card-body"><br> -->
-                  <h5 class="card-title">
-                    <!-- <?php echo $row_professional_course->ID;?> -->
-                    <?php echo $row_professional_course->title;?>
-                  </h5>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
+            </p> -->
 
-                  <!-- <p>
-                    <span style="font-size: 20px"><strong>RM10</strong></span
-                    >&nbsp;<span
-                      style="text-decoration: line-through; color: gray"
-                      >RM 20</span
-                    >
-                  </p> -->
-
-                  <br>
-                  <a
-                    href="<?= base_url(); ?>/images/<?php echo $row_professional_course->details;?>"
-                    target="_blank"
-                    class="btn btn-primary"
-                    style="background-color: #d5823a; border: none"
-                    >Get Quoter</a
-                  >
-                  <!-- </div> -->
-                </div>
-              </a>
-            </div>
+            <br>
+            <a
+              href="<?= base_url(); ?>/images/<?php echo $row_short_course->details;?>"
+              target="_blank"
+              class="btn btn-primary"
+              style="background-color: #d5823a; border: none"
+              >Get Quoter</a
+            >
+            <!-- </div> -->
           </div>
-        <?php } ?>
+        </a>
       </div>
-      <!-- /SECTION 1: PROFESSIONAL COURSES -->			
-
-      <br>
-      <hr>
-
-      <!-- SECTION 2: SHORT COURSES / WORKSHOPS -->			
-      <div style="text-align: center;"><strong style="font-size: 30PX">SHORT COURSES / WORKSHOPS</strong></div>
-      
-      <div class="row slider">
-        <?php foreach($short_course_list as $row_short_course){ ?>
-          <div class="col-md-12">
-            <div
-              style="padding-bottom: 30px; background: white"
-              class="details text-center"
-              >
-              <!-- class="piece text-center" -->
-              <a href="">
-                <div>
-                  <!-- <div class="card" style="width: 15rem;"> -->
-                    <!-- src="<?= base_url(); ?>as/import/img/hotdeal.jpg" -->
-                  <img
-                    src="<?= base_url(); ?>/images/<?php echo $row_short_course->image;?>"
-                    id="courseImg"
-                    class="card-img-top"
-                    alt="..."
-                    style="width: 100%; max-height: 170px"
-                  />
-                  <!-- <div class="card-body"><br> -->
-                  <h5 class="card-title">
-                    <!-- <?php echo $row_short_course->ID;?> -->
-                    <?php echo $row_short_course->title;?>
-                  </h5>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-
-                  <!-- <p>
-                    <span style="font-size: 20px"><strong>RM10</strong></span
-                    >&nbsp;<span
-                      style="text-decoration: line-through; color: gray"
-                      >RM 20</span
-                    >
-                  </p> -->
-
-                  <br>
-                  <a
-                    href="<?= base_url(); ?>/images/<?php echo $row_short_course->details;?>"
-                    target="_blank"
-                    class="btn btn-primary"
-                    style="background-color: #d5823a; border: none"
-                    >Get Quoter</a
-                  >
-                  <!-- </div> -->
-                </div>
-              </a>
-            </div>
-          </div>
-        <?php } ?>
-      </div>
-      <!-- /SECTION 2: SHORT COURSES / WORKSHOPS -->			
-      <br>
-      <hr>
-
-      <!-- SECTION 3: LIMITED COURSES -->			
-      <div style="text-align: center;"><strong style="font-size: 30PX">LIMITED COURSES</strong></div>
-      
-      <div class="row slider">
-        <?php foreach($limited_course_list as $row_limited_course){ ?>
-          <div class="col-md-12">
-            <div
-              style="padding-bottom: 30px; background: white"
-              class="details text-center"
-              >
-              <!-- class="piece text-center" -->
-              <a href="">
-                <div>
-                  <!-- <div class="card" style="width: 15rem;"> -->
-                    <!-- src="<?= base_url(); ?>as/import/img/hotdeal.jpg" -->
-                  <img
-                    src="<?= base_url(); ?>/images/<?php echo $row_limited_course->image;?>"
-                    id="courseImg"
-                    class="card-img-top"
-                    alt="..."
-                    style="width: 100%; max-height: 170px"
-                  />
-                  <!-- <div class="card-body"><br> -->
-                  <h5 class="card-title">
-                    <!-- <?php echo $row_limited_course->ID;?> -->
-                    <?php echo $row_limited_course->title;?>
-                  </h5>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-
-                  <!-- <p>
-                    <span style="font-size: 20px"><strong>RM10</strong></span
-                    >&nbsp;<span
-                      style="text-decoration: line-through; color: gray"
-                      >RM 20</span
-                    >
-                  </p> -->
-
-                  <br>
-                  <a
-                    href="<?= base_url(); ?>/images/<?php echo $row_limited_course->details;?>"
-                    target="_blank"
-                    class="btn btn-primary"
-                    style="background-color: #d5823a; border: none"
-                    >Get Quoter</a
-                  >
-                  <!-- </div> -->
-                </div>
-              </a>
-            </div>
-          </div>
-        <?php } ?>
-      </div>
-      <!-- /SECTION 3: LIMITED COURSES -->			
-    </div>
+    <?php } ?>
 
     <!--  -->
     <!--  -->
@@ -691,12 +523,6 @@
         <!-- /FOOTER -->
 
     <!-- slick -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
-    
-    <!--  -->
-    <!--  -->
-    <!--  -->
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.js"></script>
@@ -714,122 +540,61 @@
 		<script src="<?= site_url(); ?>as/import/js/jquery.zoom.min.js"></script>
 		<script src="<?= site_url(); ?>as/import/js/main.js"></script>
 
-    <script >
-      /* $('.slider').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        centerMode: true,
-        variableWidth: true
-      }); */
-      $('.slider').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        autoplay: true,
-        /* centerMode: true,
-        variableWidth: true, */
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true,
-              arrows: false,
-              autoplay: false,
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              arrows: false
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              arrows: false
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              arrow: false
-            }
-          }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-        ]
-      });
-
-      //////////////////////////////////////////////////////////////////////////////////////////////
-      // Timer
-      $( document ).ready(function() {
-        getSeconds();
-      });
-
-        var curday;
-        var secTime;
-        var ticker;
-        
-        function getSeconds() {
-        var nowDate = new Date();
-        var dy = 6 ; //Sunday through Saturday, 0 to 6
-        var countertime = new Date(nowDate.getFullYear(),nowDate.getMonth(),nowDate.getDate(),20,0,0); //20 out of 24 hours = 8pm
-        
-        var curtime = nowDate.getTime(); //current time
-        var atime = countertime.getTime(); //countdown time
-        var diff = parseInt((atime - curtime)/1000);
-        if (diff > 0) { curday = dy - nowDate.getDay() }
-        else { curday = dy - nowDate.getDay() -1 } //after countdown time
-        if (curday < 0) { curday += 7; } //already after countdown time, switch to next week
-        if (diff <= 0) { diff += (86400 * 7) }
-        startTimer (diff);
-      }
-        
-      function startTimer(secs) {
-        secTime = parseInt(secs);
-        ticker = setInterval("tick()",1000);
-        tick(); //initial count display
-      }
-        
-      function tick() {
-        var secs = secTime;
-        if (secs>0) {
-          secTime--;
-        }
-        else {
-          clearInterval(ticker);
-          getSeconds(); //start over
-        }
-        
-        var days = Math.floor(secs/86400);
-        secs %= 86400;
-        var hours= Math.floor(secs/3600);
-        secs %= 3600;
-        var mins = Math.floor(secs/60);
-        secs %= 60;
-        
-        //update the time display
-        document.getElementById("days").innerHTML = curday+" Days";
-        document.getElementById("hours").innerHTML = ((hours < 10 ) ? "0" : "" ) + hours+" Hours";
-        document.getElementById("minutes").innerHTML = ( (mins < 10) ? "0" : "" ) + mins+" Mins";
-        document.getElementById("seconds").innerHTML = ( (secs < 10) ? "0" : "" ) + secs+" Secs";
-        // End-of-Timer
-        ////////////////////////////////////////////////////////////////////////////////////////////// 
-      }
-    </script>
-  </body>
+	</body>
+	<script>
+    $( document ).ready(function() {
+      getSeconds();
+    });
+  </script>
+  <script>
+    var curday;
+    var secTime;
+    var ticker;
+    
+    function getSeconds() {
+    var nowDate = new Date();
+    var dy = 6 ; //Sunday through Saturday, 0 to 6
+    var countertime = new Date(nowDate.getFullYear(),nowDate.getMonth(),nowDate.getDate(),20,0,0); //20 out of 24 hours = 8pm
+    
+    var curtime = nowDate.getTime(); //current time
+    var atime = countertime.getTime(); //countdown time
+    var diff = parseInt((atime - curtime)/1000);
+    if (diff > 0) { curday = dy - nowDate.getDay() }
+    else { curday = dy - nowDate.getDay() -1 } //after countdown time
+    if (curday < 0) { curday += 7; } //already after countdown time, switch to next week
+    if (diff <= 0) { diff += (86400 * 7) }
+    startTimer (diff);
+    }
+    
+    function startTimer(secs) {
+    secTime = parseInt(secs);
+    ticker = setInterval("tick()",1000);
+    tick(); //initial count display
+    }
+    
+    function tick() {
+    var secs = secTime;
+    if (secs>0) {
+      secTime--;
+    }
+    else {
+      clearInterval(ticker);
+      getSeconds(); //start over
+    }
+    
+    var days = Math.floor(secs/86400);
+    secs %= 86400;
+    var hours= Math.floor(secs/3600);
+    secs %= 3600;
+    var mins = Math.floor(secs/60);
+    secs %= 60;
+    
+    //update the time display
+    document.getElementById("days").innerHTML = curday+" Days";
+    document.getElementById("hours").innerHTML = ((hours < 10 ) ? "0" : "" ) + hours+" Hours";
+    document.getElementById("minutes").innerHTML = ( (mins < 10) ? "0" : "" ) + mins+" Mins";
+    document.getElementById("seconds").innerHTML = ( (secs < 10) ? "0" : "" ) + secs+" Secs";
+    }
+  </script>
 </html>
+
