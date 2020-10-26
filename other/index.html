@@ -1,0 +1,936 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		
+    <title>New Asia Academy</title>
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+		<!-- Bootstrap -->
+		<!-- <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/> -->
+    <link type="text/css" rel="stylesheet" href="http://www.newasiaacademy.com/other/as/import/css/bootstrap.min.css"/>
+    <!-- <link                                  href="http://www.newasiaacademy.com/other/as/import/ -->
+
+		<!-- Slick -->
+		<link type="text/css" rel="stylesheet" href="http://www.newasiaacademy.com/other/as/import/css/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="http://www.newasiaacademy.com/other/as/import/css/slick-theme.css"/>
+
+		<!-- nouislider -->
+		<!-- <link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/> -->
+
+		<!-- Font Awesome Icon -->
+		<link type="text/css" rel="stylesheet" href="http://www.newasiaacademy.com/other/as/import/css/font-awesome.min.css">
+
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="http://www.newasiaacademy.com/other/as/import/css/style.css"/>
+ 			
+		<!-- slick -->
+		<!-- <link type="text/css" rel="stylesheet" href="../as/import/slick/slick.css"/> -->
+		<link type="text/css" rel="stylesheet" href="http://www.newasiaacademy.com/other/as/import/slick/slick.css"/>
+    <link type="text/css" rel="stylesheet" href="http://www.newasiaacademy.com/other/as/import/slick/slick-theme.css"/>
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/slick.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+  <style>
+    .checked {
+      color: orange;
+    }.count{
+      color: white;
+      background-color: #d57729;
+      padding:10px 10px 10px 10px;
+    }
+    html,body
+    {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden; 
+    }
+    /* body{
+      background-color: black;
+    } */
+
+      .flex-container {
+        display: flex;
+        background-color: DodgerBlue;
+        flex-wrap: wrap;
+        /* overflow-x: scroll; */
+        width: 50%;
+      }
+      
+      /* .flex-container > div > div { */
+      .flex-container > span {
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+      }
+      /*  */
+      ./* flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: DodgerBlue;
+      }
+
+      .flex-container > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      } */
+
+    #courseImg {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .thecard{
+        padding-left: 60px
+      }
+      .partner{
+        font-size: 18px
+      }
+    }
+
+    /* slick */
+    .details {
+      margin: 10px 0;
+      background-color: #fff;
+      padding: 30px 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    #courseImg {
+      height: 125px;
+      width: 150px;
+    }
+    /* button.slick-prev.slick-arrow:before, button.slick-next:before, button.slick-slide-control00::before, button.slick-slide-control01 { */
+    button.slick-prev.slick-arrow:before, button.slick-next:before {
+      color: #d57729;
+      font-size: x-large;
+    }
+  
+  </style>   
+
+  </head>
+  <body>
+    <!-- HEADER -->
+		<header>
+			<div id="header" style="background-color: white">
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<!-- LOGO -->
+						<div class="col-md-3">
+							<div class="header-logo">
+								<a href="#" class="logo">
+									<img src="http://www.newasiaacademy.com/other/as/import/img/logo3.png" alt="" >
+								</a>
+							</div>
+						</div>
+					
+						<div class="col-md-3 clearfix">
+							<div class="header-ctn">							
+							</div>
+						</div>
+					
+					</div>
+				
+				</div>
+			
+			</div>
+			
+		</header>
+		
+    <!--Timer-->
+		<div id="hot-deal" class="section top">
+			<!-- container -->
+			<div class="container-fluid">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="hot-deal">
+							<ul class="hot-deal-countdown">	
+									<strong>
+										<span class="count" id="days" >Days</span>
+										<span  class="count" id="hours">Hours</span>
+										<span class="count" id="minutes">Mins</span>
+										<span class="count" id="seconds">Secs</span>
+									</strong>
+              </ul> 
+
+							<h2 class="text-uppercase" style="text-shadow: 2px 2px black;color: white"><span style="font-size: 60px;background-color: oranged"> 30++</span> FREE Online Course Enquiry</h2>
+							<p>(hrdf claimable & certification provided)</p>
+							<a class="primary-btn cta-btn" href="https://api.whatsapp.com/send?phone=+60183858006&text=">CONTACT US</a>
+                <a class="primary-btn cta-btn" href="#course">FREE REGISTER</a>
+						</div>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+    </div>
+    <!--/Timer-->
+  
+    <div class="container">
+      <br>
+      <hr>
+
+      <!-- SECTION 1: PROFESSIONAL COURSES -->			
+    
+    <!--    <p style="text-align: center;">
+ <a href="#" class="btn btn-primary" style="background-color: #d5823a;border: none;font-size: 15px;">
+          Show More
+        </a></p>
+     / -->			
+
+      <br>
+      <hr>
+
+      <!-- SECTION 2: SHORT COURSES / WORKSHOPS -->			
+      <div style="text-align: center;"><strong style="font-size: 25PX"> 10++ SHORT COURSES / WORKSHOPS </strong></div>
+       <div style="text-align: center;"><strong style="font-size: 25PX">(UP TO 30% DISCOUNT-31/12/2020)</strong></div>
+      <div class="row slider">
+                  <div class="col-md-12">
+           <div
+              style="padding-bottom: 30px; background: white;border-style: outset;max-height: 500px"
+              class="details text-center"
+              >
+              <!-- class="piece text-center" -->
+              <a href="https://api.whatsapp.com/send?phone=+60183858006&text=   Business English">
+                <div>
+                  <!-- <div class="card" style="width: 15rem;"> -->
+                    <!-- src="http://www.newasiaacademy.com/other/as/import/img/hotdeal.jpg" -->
+                  <img
+                    src="http://www.newasiaacademy.com/other//images/1f73ad21811f2b5bb465eb48ca9c988e.jpeg"
+                    id="courseImg"
+                    class="card-img-top"
+                    alt="..."
+                    style="width: 100%;height: 100%"
+                  />
+                  <!-- <div class="card-body"> --><br>
+                  <h4 class="card-title">
+                    <!-- 29 -->
+                    Business English                  </h4>
+            
+
+                  <!-- <p>
+                    <span style="font-size: 20px"><strong>RM10</strong></span
+                    >&nbsp;<span
+                      style="text-decoration: line-through; color: gray"
+                      >RM 20</span
+                    >
+                  </p> -->
+
+                  <br> 
+                  <div class="card-title">
+                       <a
+                    href="https://api.whatsapp.com/send?phone=+60183858006&text=   Business English"
+                    target="_blank"
+                    class="btn btn-primary"
+                    style="background-color: #d5823a; border: none"
+                    >Learn Now</a>
+                      <a
+                    href="tel:+6018-3858006"
+                    target="_blank"
+                    class="btn btn-primary"
+                    style="background-color: #d5823a; border: none"
+                    ><i class="fa fa-phone" style="font-size:20px"></i></a>
+                   
+
+                  <!-- </div> -->
+               
+              </a>
+            </div>
+                  <!-- </div> -->
+                </div>
+              </a>
+            </div>
+          </div>
+                  <div class="col-md-12">
+           <div
+              style="padding-bottom: 30px; background: white;border-style: outset;max-height: 500px"
+              class="details text-center"
+              >
+              <!-- class="piece text-center" -->
+              <a href="https://api.whatsapp.com/send?phone=+60183858006&text=   Digital Marketing (Basic)">
+                <div>
+                  <!-- <div class="card" style="width: 15rem;"> -->
+                    <!-- src="http://www.newasiaacademy.com/other/as/import/img/hotdeal.jpg" -->
+                  <img
+                    src="http://www.newasiaacademy.com/other//images/52128a6140f0ec52b86eda3b53190a90.jpeg"
+                    id="courseImg"
+                    class="card-img-top"
+                    alt="..."
+                    style="width: 100%;height: 100%"
+                  />
+                  <!-- <div class="card-body"> --><br>
+                  <h4 class="card-title">
+                    <!-- 30 -->
+                    Digital Marketing (Basic)                  </h4>
+            
+
+                  <!-- <p>
+                    <span style="font-size: 20px"><strong>RM10</strong></span
+                    >&nbsp;<span
+                      style="text-decoration: line-through; color: gray"
+                      >RM 20</span
+                    >
+                  </p> -->
+
+                  <br> 
+                  <div class="card-title">
+                       <a
+                    href="https://api.whatsapp.com/send?phone=+60183858006&text=   Digital Marketing (Basic)"
+                    target="_blank"
+                    class="btn btn-primary"
+                    style="background-color: #d5823a; border: none"
+                    >Learn Now</a>
+                      <a
+                    href="tel:+6018-3858006"
+                    target="_blank"
+                    class="btn btn-primary"
+                    style="background-color: #d5823a; border: none"
+                    ><i class="fa fa-phone" style="font-size:20px"></i></a>
+                   
+
+                  <!-- </div> -->
+               
+              </a>
+            </div>
+                  <!-- </div> -->
+                </div>
+              </a>
+            </div>
+          </div>
+                  <div class="col-md-12">
+           <div
+              style="padding-bottom: 30px; background: white;border-style: outset;max-height: 500px"
+              class="details text-center"
+              >
+              <!-- class="piece text-center" -->
+              <a href="https://api.whatsapp.com/send?phone=+60183858006&text=   IT Workshop Learning (Beginner)">
+                <div>
+                  <!-- <div class="card" style="width: 15rem;"> -->
+                    <!-- src="http://www.newasiaacademy.com/other/as/import/img/hotdeal.jpg" -->
+                  <img
+                    src="http://www.newasiaacademy.com/other//images/fdcd734b92b9a92fd67f4dd1d24db8b0.jpeg"
+                    id="courseImg"
+                    class="card-img-top"
+                    alt="..."
+                    style="width: 100%;height: 100%"
+                  />
+                  <!-- <div class="card-body"> --><br>
+                  <h4 class="card-title">
+                    <!-- 31 -->
+                    IT Workshop Learning (Beginner)                  </h4>
+            
+
+                  <!-- <p>
+                    <span style="font-size: 20px"><strong>RM10</strong></span
+                    >&nbsp;<span
+                      style="text-decoration: line-through; color: gray"
+                      >RM 20</span
+                    >
+                  </p> -->
+
+                  <br> 
+                  <div class="card-title">
+                       <a
+                    href="https://api.whatsapp.com/send?phone=+60183858006&text=   IT Workshop Learning (Beginner)"
+                    target="_blank"
+                    class="btn btn-primary"
+                    style="background-color: #d5823a; border: none"
+                    >Learn Now</a>
+                      <a
+                    href="tel:+6018-3858006"
+                    target="_blank"
+                    class="btn btn-primary"
+                    style="background-color: #d5823a; border: none"
+                    ><i class="fa fa-phone" style="font-size:20px"></i></a>
+                   
+
+                  <!-- </div> -->
+               
+              </a>
+            </div>
+                  <!-- </div> -->
+                </div>
+              </a>
+            </div>
+          </div>
+                  <div class="col-md-12">
+           <div
+              style="padding-bottom: 30px; background: white;border-style: outset;max-height: 500px"
+              class="details text-center"
+              >
+              <!-- class="piece text-center" -->
+              <a href="https://api.whatsapp.com/send?phone=+60183858006&text=   OBS Live Stream">
+                <div>
+                  <!-- <div class="card" style="width: 15rem;"> -->
+                    <!-- src="http://www.newasiaacademy.com/other/as/import/img/hotdeal.jpg" -->
+                  <img
+                    src="http://www.newasiaacademy.com/other//images/801f2eba52b98eabab3bac1731aab2d8.jpeg"
+                    id="courseImg"
+                    class="card-img-top"
+                    alt="..."
+                    style="width: 100%;height: 100%"
+                  />
+                  <!-- <div class="card-body"> --><br>
+                  <h4 class="card-title">
+                    <!-- 32 -->
+                    OBS Live Stream                  </h4>
+            
+
+                  <!-- <p>
+                    <span style="font-size: 20px"><strong>RM10</strong></span
+                    >&nbsp;<span
+                      style="text-decoration: line-through; color: gray"
+                      >RM 20</span
+                    >
+                  </p> -->
+
+                  <br> 
+                  <div class="card-title">
+                       <a
+                    href="https://api.whatsapp.com/send?phone=+60183858006&text=   OBS Live Stream"
+                    target="_blank"
+                    class="btn btn-primary"
+                    style="background-color: #d5823a; border: none"
+                    >Learn Now</a>
+                      <a
+                    href="tel:+6018-3858006"
+                    target="_blank"
+                    class="btn btn-primary"
+                    style="background-color: #d5823a; border: none"
+                    ><i class="fa fa-phone" style="font-size:20px"></i></a>
+                   
+
+                  <!-- </div> -->
+               
+              </a>
+            </div>
+                  <!-- </div> -->
+                </div>
+              </a>
+            </div>
+          </div>
+                  <div class="col-md-12">
+           <div
+              style="padding-bottom: 30px; background: white;border-style: outset;max-height: 500px"
+              class="details text-center"
+              >
+              <!-- class="piece text-center" -->
+              <a href="https://api.whatsapp.com/send?phone=+60183858006&text=   Business Excel Workshop">
+                <div>
+                  <!-- <div class="card" style="width: 15rem;"> -->
+                    <!-- src="http://www.newasiaacademy.com/other/as/import/img/hotdeal.jpg" -->
+                  <img
+                    src="http://www.newasiaacademy.com/other//images/fbaf9c9a717a9e0663257ea41b9d3a71.jpeg"
+                    id="courseImg"
+                    class="card-img-top"
+                    alt="..."
+                    style="width: 100%;height: 100%"
+                  />
+                  <!-- <div class="card-body"> --><br>
+                  <h4 class="card-title">
+                    <!-- 33 -->
+                    Business Excel Workshop                  </h4>
+            
+
+                  <!-- <p>
+                    <span style="font-size: 20px"><strong>RM10</strong></span
+                    >&nbsp;<span
+                      style="text-decoration: line-through; color: gray"
+                      >RM 20</span
+                    >
+                  </p> -->
+
+                  <br> 
+                  <div class="card-title">
+                       <a
+                    href="https://api.whatsapp.com/send?phone=+60183858006&text=   Business Excel Workshop"
+                    target="_blank"
+                    class="btn btn-primary"
+                    style="background-color: #d5823a; border: none"
+                    >Learn Now</a>
+                      <a
+                    href="tel:+6018-3858006"
+                    target="_blank"
+                    class="btn btn-primary"
+                    style="background-color: #d5823a; border: none"
+                    ><i class="fa fa-phone" style="font-size:20px"></i></a>
+                   
+
+                  <!-- </div> -->
+               
+              </a>
+            </div>
+                  <!-- </div> -->
+                </div>
+              </a>
+            </div>
+          </div>
+                  <div class="col-md-12">
+           <div
+              style="padding-bottom: 30px; background: white;border-style: outset;max-height: 500px"
+              class="details text-center"
+              >
+              <!-- class="piece text-center" -->
+              <a href="https://api.whatsapp.com/send?phone=+60183858006&text=   Photoshop Workshop">
+                <div>
+                  <!-- <div class="card" style="width: 15rem;"> -->
+                    <!-- src="http://www.newasiaacademy.com/other/as/import/img/hotdeal.jpg" -->
+                  <img
+                    src="http://www.newasiaacademy.com/other//images/c7e49e3cc68370ca4f800eefe5c23979.jpeg"
+                    id="courseImg"
+                    class="card-img-top"
+                    alt="..."
+                    style="width: 100%;height: 100%"
+                  />
+                  <!-- <div class="card-body"> --><br>
+                  <h4 class="card-title">
+                    <!-- 34 -->
+                    Photoshop Workshop                  </h4>
+            
+
+                  <!-- <p>
+                    <span style="font-size: 20px"><strong>RM10</strong></span
+                    >&nbsp;<span
+                      style="text-decoration: line-through; color: gray"
+                      >RM 20</span
+                    >
+                  </p> -->
+
+                  <br> 
+                  <div class="card-title">
+                       <a
+                    href="https://api.whatsapp.com/send?phone=+60183858006&text=   Photoshop Workshop"
+                    target="_blank"
+                    class="btn btn-primary"
+                    style="background-color: #d5823a; border: none"
+                    >Learn Now</a>
+                      <a
+                    href="tel:+6018-3858006"
+                    target="_blank"
+                    class="btn btn-primary"
+                    style="background-color: #d5823a; border: none"
+                    ><i class="fa fa-phone" style="font-size:20px"></i></a>
+                   
+
+                  <!-- </div> -->
+               
+              </a>
+            </div>
+                  <!-- </div> -->
+                </div>
+              </a>
+            </div>
+          </div>
+              </div>
+
+      <!-- /SECTION 2: SHORT COURSES / WORKSHOPS -->			
+        <div style="text-align: center;"><strong style="font-size: 25PX" id="course">PROFESSIONAL COURSES</strong></div>
+      
+      <div class="row slider">
+
+        <div class="col-md-12">
+          <div
+            style="padding-bottom: 30px; background: white;border-style: outset;height: 300px"
+            class="details text-center"
+            >
+
+            <a href="http://www.newasiaacademy.com/other/index/course_details/24">
+              <div>
+              
+                <img
+                  src="http://www.newasiaacademy.com/other//images/53f587f476d48cb7c1a27ecce0e736e3.jpg"
+                  id="courseImg"
+                  class="card-img-top"
+                  alt="..."
+                  style="width: 100%; max-height: 170px"
+                />
+                <br>
+                <h5 class="card-title"><strong>
+                
+                  Southern Space Professional Certificate in Live Streaming & Visual Marketing Course                  </strong>
+                </h5>
+              <a href="">
+
+
+                <br>
+                
+                <!-- href="http://www.newasiaacademy.com/other/index/course_details/24" -->
+                <a
+                  href="pdf/Southern Space Professional Certificate in Live Streaming & Visual Marketing Course.pdf"
+                  target="_blank"
+                  class="btn btn-primary"
+                  style="background-color: #d5823a; border: none"
+                  >Details
+                  </a> 
+                    <a
+                  href="tel:+6018-3858006"
+                  target="_blank"
+                  class="btn btn-primary"
+                  style="background-color: #d5823a; border: none"
+                  ><i class="fa fa-phone" style="font-size:20px"></i></a>
+                  <a
+                  href="https://api.whatsapp.com/send?phone=+60183858006&text="
+                  target="_blank"
+                  class="btn btn-primary"
+                  style="background-color: #d5823a; border: none"
+                  ><i class="fa fa-whatsapp" style="font-size:20px"></i></a>
+
+                <!-- </div> -->
+              </div>
+            </a>
+          </div>
+        </div>
+
+                  <div class="col-md-12">
+            <div
+              style="padding-bottom: 30px; background: white;border-style: outset;height: 300px"
+              class="details text-center"
+              >
+  
+              <a href="http://www.newasiaacademy.com/other/index/course_details/23">
+                <div>
+               
+                  <img
+                    src="http://www.newasiaacademy.com/other//images/ed23b963701af0196189e4dd46a64a0a.jpg"
+                    id="courseImg"
+                    class="card-img-top"
+                    alt="..."
+                    style="width: 100%; max-height: 170px"
+                  />
+                  <br>
+                  <h5 class="card-title"><strong>
+                  
+                    UTM Space Professional Diploma in Digital Marketing                  </strong>
+                  </h5>
+                <a href="">
+
+  
+                  <br>
+                  
+                  <!-- href="http://www.newasiaacademy.com/other/index/course_details/23" -->
+                  <a
+                    href="pdf/UTM Space Professional Diploma in Digital Marketing.pdf"
+                    target="_blank"
+                    class="btn btn-primary"
+                    style="background-color: #d5823a; border: none"
+                    >Details
+                    </a> 
+                      <a
+                    href="tel:+6018-3858006"
+                    target="_blank"
+                    class="btn btn-primary"
+                    style="background-color: #d5823a; border: none"
+                    ><i class="fa fa-phone" style="font-size:20px"></i></a>
+                    <a
+                    href="https://api.whatsapp.com/send?phone=+60183858006&text="
+                    target="_blank"
+                    class="btn btn-primary"
+                    style="background-color: #d5823a; border: none"
+                    ><i class="fa fa-whatsapp" style="font-size:20px"></i></a>
+
+                  <!-- </div> -->
+                </div>
+              </a>
+            </div>
+          </div>
+
+                  
+
+        
+      </div>
+      <br>
+      <hr>
+
+      <!-- SECTION 3: LIMITED COURSES -->			
+   
+      
+      
+      <!-- /SECTION 3: LIMITED COURSES -->			
+    </div>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+
+    
+  
+
+  
+      
+
+      <div class="container-fluid" style="padding-top: 40px">
+        <div class="row">
+            <div class="col-md-6"  style="text-align: center;font-size: 25px">
+            <strong class="partner">Our Academic Partners</strong>
+              <img src="http://www.newasiaacademy.com/other/as/import/img/a1.jpg"style="max-width: 800px; width: 100%;height: auto;">
+          </div>
+          <div class="col-md-6"  style="text-align: center;font-size: 25px">
+          <strong class="partner">Our Affiliate Partners</strong>
+          <img src="http://www.newasiaacademy.com/other/as/import/img/a2.jpg" style="max-width: 800px; width: 100%;height: auto;">
+          </div>
+        </div>
+      </div>
+        
+        <!-- NEWSLETTER -->
+      
+        <!-- /NEWSLETTER -->
+    
+        <!-- FOOTER -->
+        <footer id="footer">
+          <!-- top footer -->
+          <div class="section">
+            <!-- container -->
+            <div class="container">
+              <!-- row -->
+              <div class="row">
+                <div class="col-md-4 col-xs-6">
+                  <div class="footer">
+                    <h3 class="footer-title">Contact</h3>
+                    
+                    <ul class="footer-links">
+                      <li><a href="#"><i class="fa fa-map-marker"></i>57-02, Jalan Austin Heights 8/5, Taman Mount Austin 81100 Johor Bahru</a></li>
+                      <li><a href="#"><i class="fa fa-phone"></i>018 - 385 8006</a></li>
+                      <li><a href="#"><i class="fa fa-envelope-o"></i>newasiaacademy@gmail.com</a></li>
+                    </ul>
+                  </div>
+                </div>
+              
+    
+              
+    
+              
+    
+              
+              <div class="col-md-4 col-xs-6">
+                  <div class="footer">
+                    <h3 class="footer-title">&nbsp;</h3>
+                    
+                    <ul class="footer-links">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7976.667364768803!2d103.778474!3d1.563093!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da6e88f4bd46fd%3A0x29e0dd4c2803c269!2s57%2C%20Jalan%20Austin%20Heights%208%2F5%2C%2081100%20Johor%20Bahru%2C%20Johor!5e0!3m2!1szh-CN!2smy!4v1600417247092!5m2!1szh-CN!2smy" width="300" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </ul>
+                  </div>
+                </div>
+                  <div class="col-md-4 col-xs-6">
+                  <div class="footer">
+                    <h3 class="footer-title">Information</h3>
+                    <ul class="footer-links">
+                      <li><a href="http://www.newasiaacademy.com/other/about/">About Us</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+                
+              </div>
+              <!-- /row -->
+            </div>
+            <!-- /container -->
+          </div>
+          <!-- /top footer -->
+    
+          <!-- bottom footer -->
+      
+          <!-- /bottom footer -->
+        </footer>
+        <!-- /FOOTER -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+     <img width="100%" src="http://www.newasiaacademy.com/other/images/1f73ad21811f2b5bb465eb48ca9c988e.jpeg" >
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- slick -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+    $(window).on('load',function(){
+        $('#exampleModal').modal('show');
+    });
+</script>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+  
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- jQuery Plugins -->
+		<script src="http://www.newasiaacademy.com/other/as/import/js/jquery.min.js"></script>
+		<!-- <script src="js/jquery.min.js"></script> -->
+		<script src="http://www.newasiaacademy.com/other/as/import/js/bootstrap.min.js"></script>
+		<script src="http://www.newasiaacademy.com/other/as/import/js/slick.min.js"></script>
+		<script src="http://www.newasiaacademy.com/other/as/import/js/nouislider.min.js"></script>
+		<script src="http://www.newasiaacademy.com/other/as/import/js/jquery.zoom.min.js"></script>
+		<script src="http://www.newasiaacademy.com/other/as/import/js/main.js"></script>
+    <script src="http://www.newasiaacademy.com/other/as/anti.js"></script>
+    <script >
+      /* $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+      }); */
+      $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        autoplay: true,
+        /* centerMode: true,
+        variableWidth: true, */
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+              arrows: false,
+              autoplay: false,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              arrows: false
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              arrows: false
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrow: false
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+
+      //////////////////////////////////////////////////////////////////////////////////////////////
+      // Timer
+      $( document ).ready(function() {
+        getSeconds();
+      });
+
+        var curday;
+        var secTime;
+        var ticker;
+        
+        function getSeconds() {
+        var nowDate = new Date();
+        var dy = 6 ; //Sunday through Saturday, 0 to 6
+        var countertime = new Date(nowDate.getFullYear(),nowDate.getMonth(),nowDate.getDate(),20,0,0); //20 out of 24 hours = 8pm
+        
+        var curtime = nowDate.getTime(); //current time
+        var atime = countertime.getTime(); //countdown time
+        var diff = parseInt((atime - curtime)/1000);
+        if (diff > 0) { curday = dy - nowDate.getDay() }
+        else { curday = dy - nowDate.getDay() -1 } //after countdown time
+        if (curday < 0) { curday += 7; } //already after countdown time, switch to next week
+        if (diff <= 0) { diff += (86400 * 7) }
+        startTimer (diff);
+      }
+        
+      function startTimer(secs) {
+        secTime = parseInt(secs);
+        ticker = setInterval("tick()",1000);
+        tick(); //initial count display
+      }
+        
+      function tick() {
+        var secs = secTime;
+        if (secs>0) {
+          secTime--;
+        }
+        else {
+          clearInterval(ticker);
+          getSeconds(); //start over
+        }
+        
+        var days = Math.floor(secs/86400);
+        secs %= 86400;
+        var hours= Math.floor(secs/3600);
+        secs %= 3600;
+        var mins = Math.floor(secs/60);
+        secs %= 60;
+        
+        //update the time display
+        document.getElementById("days").innerHTML = curday+" Days";
+        document.getElementById("hours").innerHTML = ((hours < 10 ) ? "0" : "" ) + hours+" Hours";
+        document.getElementById("minutes").innerHTML = ( (mins < 10) ? "0" : "" ) + mins+" Mins";
+        document.getElementById("seconds").innerHTML = ( (secs < 10) ? "0" : "" ) + secs+" Secs";
+        // End-of-Timer
+        ////////////////////////////////////////////////////////////////////////////////////////////// 
+      }
+    </script>
+
+  </body>
+</html>
